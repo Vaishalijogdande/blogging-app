@@ -12,6 +12,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+
+
 import java.util.List;
 
 @SpringBootApplication
@@ -41,11 +43,11 @@ public class BloggingApplication implements CommandLineRunner {
 		try {
 			Role role = new Role();
 			role.setRoleId(AppConstants.ADMIN_USER);
-			role.setRoleName("ADMIN_USER");
+			role.setRoleName("ROLE_ADMIN");
 
 			Role role1 = new Role();
 			role1.setRoleId(AppConstants.NORMAL_USER);
-			role1.setRoleName("NORMAL_USER");
+			role1.setRoleName("ROLE_NORMAL");
 
 			List<Role> roles = List.of(role,role1);
 			List<Role> result = this.roleRepository.saveAll(roles);

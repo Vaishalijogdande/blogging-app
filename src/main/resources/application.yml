@@ -3,6 +3,8 @@ spring:
     url: jdbc:mysql://localhost:3306/blogging_application
     username: vaishalijogdande
     password: Vaishali@2024
+    profiles:
+      active:dev
   jpa:
     hibernate:
       ddl-auto: update

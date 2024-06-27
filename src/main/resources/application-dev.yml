@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blogging_application
+    username: vaishalijogdande
+    password: Vaishali@2024
+  jpa:
+    show-sql: true
